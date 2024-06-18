@@ -1,34 +1,32 @@
 
 # GestureFlow 
 
-This Python-based project enables interactive control of presentation slides through hand gestures captured via a webcam. Using OpenCV and CVZone libraries, the application recognizes specific gestures to navigate slides and perform annotations in real-time. It's designed to provide an engaging and hands-free experience for presentations.
+Este projeto, desenvolvido em Python, permite o controle interativo de slides de apresentação através de gestos manuais capturados por uma webcam. Utilizando as bibliotecas OpenCV e CVZone, a aplicação reconhece gestos específicos para navegar pelos slides e realizar anotações em tempo real
 
 
-## Description 
+## Descrição
 
 
-The project offers an intuitive interface, allowing users to control presentation slides through recognized hand gestures captured in real-time via a webcam. With this system, presenters can effortlessly transition between slides, draw annotations, and use their finger as a pointer during presentations.
-## Key Features 
+O projeto oferece uma interface intuitiva que permite aos usuários controlar slides de apresentação através do reconhecimento de gestos manuais capturados em tempo real via webcam. Com este sistema, os apresentadores podem alternar entre slides, desenhar anotações e usar o dedo como ponteiro.
+## Principais Funcionalidades
+* **Controle por Gestos**: Navegue pelos slides com gestos de mão para a esquerda e para a direita, imitando o folhear de páginas para transições suaves.
+  
+* **Anotação**: Desenhe nos slides usando gestos manuais, permitindo ilustrações ou ênfases durante as apresentações.
+  
+* **Modo Ponteiro**: Utilize o dedo indicador como ponteiro virtual, aprimorando a interação e o engajamento com elementos específicos nos slides.
+  
+* **Limpar Anotações**: Limpe instantaneamente as anotações desenhadas com um gesto específico, garantindo uma tela limpa para novas interações.
 
 
-* **Gesture Control** - Navigate slides with left and right hand gestures, mimicking page flipping for seamless transitions.
+## Tecnologias Usadas
 
-* **Annotation** - Draw on slides using hand gestures, enabling on-the-fly illustrations or emphasis during presentations.
+* **Python :** Linguagem principal do projeto para desenvolver as funcionalidades e a lógica da aplicação.
+* **OpenCV (cv2) :** Gerencia o acesso à webcam, manipulação de imagens e reconhecimento de gestos para controle de navegação e anotações nos slides.
+* **NumPy :** Auxilia no manejo eficiente e na manipulação dos dados de imagem para reconhecimento e processamento de gestos.
+* **CVZone :** Fornece ferramentas e funções especializadas para rastreamento preciso das mãos e interações baseadas em gestos nos slides de apresentação.
+## Requisitos e Configurações Necessárias
 
-* **Pointer Mode** - Use the index finger as a virtual pointer, enhancing interaction and engagement with specific elements on slides.
-
-* **Clear Annotations** - Instantly clear drawn annotations with a specific gesture, ensuring a clean canvas for further interactions.
-
-
-## Technologies Used 
-
-* **Python :** The project's core language for developing the application's functionalities and logic.
-* **OpenCV (cv2) :** Handles webcam access, image manipulation, and gesture recognition to control slide navigation and annotations.
-* **NumPy :** Assists in efficient handling and manipulation of image data for gesture recognition and processing.
-* **CVZone :** Provides specialized tools and functions for precise hand tracking and gesture-based interactions within the presentation slides.
-## Requirements and Configurations 
-
-**Requirements -**
+**Requisitos -**
 
 * Python 3.x
 * Webcam
@@ -36,9 +34,9 @@ The project offers an intuitive interface, allowing users to control presentatio
 
 **Configurations -**
 
-* Adjust webcam resolution via width and height variables.
-* Modify FolderPath to the directory containing presentation slides in main.py file.
-* Fine-tune gestureThreshold, button_delay, and other parameters as needed.
+* Ajuste a resolução da webcam através das variáveis ``width`` e ``height``.
+* Modifique o ``FolderPath`` para o diretório contendo os slides de apresentação no arquivo ``main.py``.
+* Ajuste ``gestureThreshold``, ``button_delay`` e outros parâmetros conforme necessário.
 ## Deployment
 
 Accessing the project involves a few steps:
